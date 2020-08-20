@@ -16,7 +16,7 @@ variable "workstations_subnet_cidr" {
 variable "elasticsearch_admin_user" {
     description = "Name of the initial admin user on the Elasticsearch / Kibana machine"
     # Warning: if you change this, also change it in ansible/elasticsearch-kibana.yml
-    default = "hunter"
+    default = "va_admin"
 }
 
 variable "ssh_key" {
@@ -26,13 +26,13 @@ variable "ssh_key" {
 
 variable "region" {
     description = "Azure region in which resources should be created. See https://azure.microsoft.com/en-us/global-infrastructure/locations/"
-    default = "West Europe"
+    default = "Southeast Asia"
 }
 
 variable "resource_group" {
     # Warning: see https://github.com/christophetd/adaz/blob/master/doc/faq.md#how-to-change-the-name-of-the-resource-group-in-which-resources-are-created
     description = "Resource group in which resources should be created. Will automatically be created and should not exist prior to running Terraform"
-    default = "ad-hunting-lab"
+    default = "vigilantasia-lab"
 }
 
 variable "dc_vm_size" {
