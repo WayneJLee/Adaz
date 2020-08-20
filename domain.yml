@@ -25,6 +25,7 @@ groups:
 - dn: CN=Domain Admins,CN=Users
   members: [wayne, limin]
 - dn: CN=AllUsers,CN=Users
+  members: [wayne, limin, kevin, joshua]
 
 # Credentials of the local admin created on all workstations
 default_local_admin:
@@ -34,9 +35,9 @@ default_local_admin:
 # Workstations to create and to domain-join
 workstations:
 - name: XTOF-WKS
-  local_admins: [christophe]
-- name: DANY-WKS
-  local_admins: [dany]
+  local_admins: [wayne]
+- name: KEVIN-WKS
+  local_admins: [kevin]
 
 # Should the Windows firewall be enabled?
 enable_windows_firewall: no
